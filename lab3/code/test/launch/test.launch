@@ -1,0 +1,18 @@
+<launch>
+
+<arg name="go_back" default="0" />
+<arg name="position_x" default="-0.299006" />
+<arg name="position_y" default="-0.0892347" />
+<arg name="position_z" default="1.32776" />
+<arg name="go_home" default="0" />
+
+<param name="go_back" value="$(arg go_back)" />
+<param name="position_x" value="$(arg position_x)" />
+<param name="position_y" value="$(arg position_y)" />
+<param name="position_z" value="$(arg position_z)" />
+<param name="go_home" value="$(arg go_home)" />
+
+<node name="move_aubo" pkg="test" type="move_aubo" output="screen" />
+
+</launch>
+

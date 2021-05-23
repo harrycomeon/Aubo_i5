@@ -1,0 +1,10 @@
+运行手抓程序：
+
+首先将手抓的线连接好，供上电，注意有两组手抓电源线有贴纸，黑色是正红色是负
+
+roscore
+sudo chmod 777 /dev/ttyUSB0 (可能变设备号 可能是1)
+rosrun  handControl handControl_node 
+rosrun handControl talker Enable 1
+rosrun handControl talker Open 1
+rosrun handControl talker Close 1
